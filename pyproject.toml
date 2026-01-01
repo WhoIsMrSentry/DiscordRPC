@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discord-rpc-extension"
+version = "0.1.0"
+description = "Discord Rich Presence updater with Spotify integration"
+requires-python = ">=3.9"
+dependencies = [
+  "pypresence>=4.3.0",
+  "spotipy>=2.23.0",
+  "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+discord-rpc-extension = "discord_rpc_extension.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
