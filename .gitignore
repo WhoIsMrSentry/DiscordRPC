@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+
+# Env/secrets
+.env
+
+# Spotipy cache
+auth.json
+.cache*
+
+# Build artifacts
+build/
+dist/
+*.spec
+
+# OS
+Desktop.ini
